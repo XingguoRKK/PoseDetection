@@ -17,8 +17,6 @@
 #import <CoreVideo/CoreVideo.h>
 #import <Foundation/Foundation.h>
 
-#import "mediapipe/examples/ios/common/CommonViewController.h"
-
 @interface FaceMeshIOSLibFaceLandmarkPoint : NSObject
 @property (nonatomic) float x;
 @property (nonatomic) float y;
@@ -43,9 +41,4 @@
  * Array of faces, with faces represented by arrays of face landmarks 
 */
 - (void)didReceiveFaceBoxes:(NSArray <FaceMeshIOSLibNormalizedRect *>*)faces;
-@end
-
-
-@interface PoseTrackingViewController : CommonViewController
-
 @end
